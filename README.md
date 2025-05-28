@@ -6,7 +6,7 @@ In modern Football defining players through classic roles such as striker, midfi
 
 This generates players who, even with the same position covered on the field, have completely different ways of interpreting the game and with different functions.
 
-This is the principle on which this project is based:
+**This is the principle on which this project is based:**
 
 Starting from the Raw Data of the 2015/2016 season for the Top 5 European leagues (Italy, England, Germany, France and Spain) released for free by Statsbomb, it was decided to calculate several advanced statistics for each player and use them to cluster them in different groups no longer based on their role, but on their playing style.
 
