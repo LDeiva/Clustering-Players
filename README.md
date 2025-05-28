@@ -82,6 +82,8 @@ Since Statsbomb does not use the classic separation of roles (Forward, Midfielde
 
 ![statsbomb role pitch](https://github.com/user-attachments/assets/4084b675-c918-4280-9bff-c119bcf1d57e)
 
+![statsbomb role table 1](https://github.com/user-attachments/assets/9c1069ca-0d31-4959-8f22-3d254a4ab62e)
+
 ![statsbomb role table](https://github.com/user-attachments/assets/07fdd546-7194-4ac1-a473-4d36958841fb)
 
 
