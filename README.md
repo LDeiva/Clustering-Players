@@ -228,7 +228,7 @@ It is isolated, it does not belong to any cluster.
 
 In the following graph you can see how the clusters found by **DBSCAN** and projected onto **UMAP** appear:
 
-![Raw_Roles_UMAP](https://github.com/user-attachments/assets/c3afe6e4-b5df-43a3-af1e-3c1df1be9244)
+![Raw_Roles_UMAP](https://github.com/user-attachments/assets/34639c10-c0d9-44d3-8e84-0572df743cdf)
 
 Label -1 represents the noise cluster, where players with unique styles that cannot be grouped into any cluster end up.
 
@@ -283,7 +283,7 @@ The following image now shows the clusters, previously defined by numbers, with 
 
 A table gives an overview of why those names.
 
-![Styles_Roles_UMAP](https://github.com/user-attachments/assets/a9bc1cf6-cde7-4265-810c-082eab12f4ee)
+![Styles_Roles_UMAP](https://github.com/user-attachments/assets/f92d644f-faa5-4c4d-8d13-4efb5ce6db18)
 
 ![Cluster Table Description](https://github.com/user-attachments/assets/2e99c7d0-de34-4ebb-b8e6-c7a0cdd91e14)
 
