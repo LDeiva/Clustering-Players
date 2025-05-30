@@ -230,13 +230,6 @@ In the following graph you can see how the clusters found by **DBSCAN** and proj
 
 ![Raw_Roles_UMAP](https://github.com/user-attachments/assets/de9dd276-2f0c-4426-a40c-01bec3735476)
 
-Label -1 represents the noise cluster, where players with unique styles that cannot be grouped into any cluster end up.
-
-This group is colored in light blue.
-
-All other labels represent clusters of different shapes and sizes than those of the classic roles appeared.
-
-
 #### Players Profilation:
 
 **DBSCAN Cluster specification:**
@@ -303,7 +296,7 @@ As anticipated, the analysis is shown that allows you to find players with uniqu
 
 ![Bonucci vs Man-Marking Defenders](https://github.com/user-attachments/assets/342a3375-221a-447b-ae8c-6f5b9e92452d)
 
-Bonucci is an outlier in the central defenders cluster as shown by his position in the UMAP.
+Bonucci, defined as central defender in classic roles definition, is an outlier in the central defenders cluster as shown by his position in the UMAP.
 
 To understand what makes him different from players similar to him, the Z-Score of his parameters was calculated compared to that of the central defenders cluster.
 
@@ -319,7 +312,7 @@ Despite covering the same role as his BBC teammates (Barzagli and Chiellini) he 
 
 ![Robben vs Finalizers](https://github.com/user-attachments/assets/3927f8c3-6dd3-4c92-bd8d-bd98c0e11736)
 
-Robben's case is slightly different.
+Robben's case, defined as winger in classic roles definition, is slightly different.
 
 If Bonucci was an outlier attributable to a single cluster, Robben is an intracluster one, therefore straddling two clusters (In this case among Chance-Creator and Finalizers).
 
