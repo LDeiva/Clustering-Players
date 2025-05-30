@@ -155,7 +155,7 @@ In our case we are interested in seeing players with similar styles, so getting 
 
 The following graph shows the result of the UMAP with the colors positioned based on the classic role associated with each player:
 
-![Classic_Roles_UMAP](https://github.com/user-attachments/assets/490f33e5-6586-439a-950d-9a4099160b6e)
+![Classic_Roles_UMAP](https://github.com/user-attachments/assets/6cb459af-26af-4f21-9a52-748f7703e8f3)
 
 From the color scheme, you can see that the central defenders and the full-backs have two completely separate clusters.
 
@@ -228,7 +228,7 @@ It is isolated, it does not belong to any cluster.
 
 In the following graph you can see how the clusters found by **DBSCAN** and projected onto **UMAP** appear:
 
-![Raw_Roles_UMAP](https://github.com/user-attachments/assets/34639c10-c0d9-44d3-8e84-0572df743cdf)
+![Raw_Roles_UMAP](https://github.com/user-attachments/assets/de9dd276-2f0c-4426-a40c-01bec3735476)
 
 Label -1 represents the noise cluster, where players with unique styles that cannot be grouped into any cluster end up.
 
