@@ -213,11 +213,11 @@ DBSCAN groups points that are close together if they are in high-density areas a
      This point is called the "elbow," and is a good candidate for ε.
 
    
-The method works because the **elbow** value allows you to define the point at which points go from being **neighbors**, and therefore part of the cluster, to **noise**.
-
-![image](https://github.com/user-attachments/assets/25626134-83a3-4b2e-84c2-d246467810de)
-
-_Plot of distance with elbow value used in this project_
+  The method works because the **elbow** value allows you to define the point at which points go from being **neighbors**, and therefore part of the cluster, to **noise**.
+  
+  ![image](https://github.com/user-attachments/assets/25626134-83a3-4b2e-84c2-d246467810de)
+  
+  _Plot of distance with elbow value used in this project_
 
 * **min_samples:** minimum number of points required within eps to consider a dense area.
 
