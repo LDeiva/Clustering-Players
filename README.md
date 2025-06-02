@@ -1,10 +1,14 @@
-# Clustering-Players
+# Clustering-Players 
 Overcome Classic Roles in Football using Dimensional Reduction plus Clustering algorithms to find Style of Playing for players.
 
-## Project Goal
-In modern Football defining players through classic roles such as striker, midfielder, full-back, etc. is limiting because the evolution of the game has produced players who have tasks on the field rather than roles.
+## Project Goal (Classic Roles vs Styles Roles)
+In modern Football defining players through **Classic Roles** such as striker, midfielder, full-back, etc. is limiting because the evolution of the game has produced players who have tasks on the field rather than roles.
 
 This generates players who, even with the same position covered on the field, have completely different ways of interpreting the game and with different functions.
+
+What has just been described is the definition of a player's playing style, which I define as **Styles Roles**.
+
+That is, the tasks, functions and characteristics that each player has beyond the position on the field covered.
 
 **This is the principle on which this project is based:**
 
@@ -186,6 +190,35 @@ DBSCAN groups points that are close together if they are in high-density areas a
 **DBSCAN also has some adjustable parameters:**
 
 * **eps:** radius (maximum distance) to consider a point as "close".
+  
+  The value of eps is calculated using the elbow point method which works as follows.
+
+  **1. Calculate the distances of the neighbors.**
+  
+    For each point in the dataset, calculate the distance to its k-th neighbor.
+
+   **2. Sort the distances.**
+   
+     Sort these distances in ascending order.
+     
+     You get a curve that grows slowly at first (points in dense regions), then rapidly (isolated points).
+
+ 
+   **3. Find the "elbow" of the curve.**
+   
+     Plot the ordered distances.
+     
+     Find the point where the curve has a significant inflection, that is, where it starts to rise more steeply.
+     
+     This point is called the "elbow," and is a good candidate for ε.
+
+   
+The method works because the **elbow** value allows you to define the point at which points go from being **neighbors**, and therefore part of the cluster, to **noise**.
+
+![image](https://github.com/user-attachments/assets/25626134-83a3-4b2e-84c2-d246467810de)
+
+_Plot of distance with elbow value used in this project_
+
 * **min_samples:** minimum number of points required within eps to consider a dense area.
 
 **DBSCAN works by classifying points into 3 categories:**
