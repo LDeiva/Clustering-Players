@@ -191,31 +191,31 @@ DBSCAN groups points that are close together if they are in high-density areas a
 
 * **eps:** radius (maximum distance) to consider a point as "close".
   
- The value of eps is calculated using the elbow point method which works as follows.
-
- **1. Calculate the distances of the neighbors.**
+  The value of eps is calculated using the elbow point method which works as follows.
  
-   For each point in the dataset, calculate the distance to its k-th neighbor.
-
- **2. Sort the distances.**
-
-   Sort these distances in ascending order.
-
-   You get a curve that grows slowly at first (points in dense regions), then rapidly (isolated points).
-   
- **3. Find the "elbow" of the curve.**
+  **1. Calculate the distances of the neighbors.**
+  
+    For each point in the dataset, calculate the distance to its k-th neighbor.
  
-   Plot the ordered distances.
-   
-   Find the point where the curve has a significant inflection, that is, where it starts to rise more steeply.
-   
-   This point is called the "elbow," and is a good candidate for ε.
-
- The method works because the **elbow** value allows you to define the point at which points go from being **neighbors**, and therefore part of the cluster, to **noise**.
+  **2. Sort the distances.**
+ 
+    Sort these distances in ascending order.
+ 
+    You get a curve that grows slowly at first (points in dense regions), then rapidly (isolated points).
+    
+  **3. Find the "elbow" of the curve.**
   
- ![image](https://github.com/user-attachments/assets/25626134-83a3-4b2e-84c2-d246467810de)
-  
-  _Plot of distance with elbow value used in this project_
+    Plot the ordered distances.
+    
+    Find the point where the curve has a significant inflection, that is, where it starts to rise more steeply.
+    
+    This point is called the "elbow," and is a good candidate for ε.
+ 
+  The method works because the **elbow** value allows you to define the point at which points go from being **neighbors**, and therefore part of the cluster, to **noise**.
+   
+  ![image](https://github.com/user-attachments/assets/25626134-83a3-4b2e-84c2-d246467810de)
+   
+   _Plot of distance with elbow value used in this project_
 
 * **min_points:** minimum number of points required within eps to consider a dense area, that is, a cluster.
 
