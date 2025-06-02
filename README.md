@@ -104,7 +104,7 @@ To decide which role to assign to each player, the number of times he played a r
 
 To aggregate players with similar playing styles based on advanced statistics, a dimensionality reduction technique called UMAP was chosen.
 
-** UMAP (Uniform Manifold Approximation and Projection)** is a dimensionality reduction algorithm used to project high-dimensional data into a lower-dimensional space (usually 2D or 3D), while maintaining as much of the local and global structure of the data as possible.
+**UMAP (Uniform Manifold Approximation and Projection)** is a dimensionality reduction algorithm used to project high-dimensional data into a lower-dimensional space (usually 2D or 3D), while maintaining as much of the local and global structure of the data as possible.
 
 **Local Structure:**
 
