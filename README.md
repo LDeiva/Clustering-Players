@@ -195,14 +195,14 @@ DBSCAN groups points that are close together if they are in high-density areas a
 
  **1. Calculate the distances of the neighbors.**
  
-    For each point in the dataset, calculate the distance to its k-th neighbor.
+   For each point in the dataset, calculate the distance to its k-th neighbor.
 
  **2. Sort the distances.**
-  
-    Sort these distances in ascending order.
-    
-    You get a curve that grows slowly at first (points in dense regions), then rapidly (isolated points).
 
+   Sort these distances in ascending order.
+
+   You get a curve that grows slowly at first (points in dense regions), then rapidly (isolated points).
+   
  **3. Find the "elbow" of the curve.**
  
    Plot the ordered distances.
@@ -215,9 +215,23 @@ DBSCAN groups points that are close together if they are in high-density areas a
   
  ![image](https://github.com/user-attachments/assets/25626134-83a3-4b2e-84c2-d246467810de)
   
- _Plot of distance with elbow value used in this project_
+  _Plot of distance with elbow value used in this project_
 
-* **min_samples:** minimum number of points required within eps to consider a dense area.
+* **min_points:** minimum number of points required within eps to consider a dense area, that is, a cluster.
+
+  There is no exact formula for **min_points**, but there are some practical guidelines based on theory and experience.
+
+  A general rule is to define min_points with the following formula:
+
+  ![Min_dist_dbscan_calculation](https://github.com/user-attachments/assets/0fa65d99-f7e8-4076-b258-d2bbcaf6518f)
+
+  Where **D** is the dimension (number of features) of the data space.
+  
+  **D + 1** guarantees that:
+  
+  1) Clusters are at least minimally dense in the data space.
+  
+  2) Scattered noise cannot be treated as a cluster.
 
 **DBSCAN works by classifying points into 3 categories:**
 
